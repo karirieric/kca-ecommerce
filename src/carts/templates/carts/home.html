@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% load custom_filters %}
+
+{% block content %}
+<div class="container">
+    <h1>Cart</h1>
+
+    <style>
+    .btn-remove {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+    </style>
+
+    {% if cart.products.exists %}
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in cart.products.all %}
+                    <tr>
+                        <th scope="row">{{ forloop.counter }}</th>
+                        <td>
+                            <a href="{{ product.get_absolute_url }}">{{ product.title }}</a>
+                            <!-- <small><a class="btn btn-danger btn-remove" href="#">Remove</a></small> -->
+
+                            {% include 'products/snippets/update-cart.html' with product=product cart=cart in_cart=True %}
+
+                        </td>
+                        <td>{{ product.price|format_price }}</td>
+                        <td></td>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <td colspan="2"></td>
+                    <td><b>Subtotal</b></td>
+                    <td>{{ cart.subtotal|format_price }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td><b>Total</b></td>
+                    <td>{{ cart.total|format_price }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% else %}
+        <p class="lead">Cart is Empty</p>
+    {% endif %}
+</div>
+
+{% endblock %}
