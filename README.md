@@ -39,8 +39,8 @@ Before you begin, ensure you have the following installed:
 ```bash
 git clone https://github.com/your-username/jamii-market.git
 
-
-echo "2. Install dependencies:"
+```console
+2. Install dependencies:
 
 
 ```bash
