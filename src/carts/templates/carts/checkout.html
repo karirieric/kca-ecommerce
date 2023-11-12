@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% load custom_filters %}
+
+{% block content %}
+<h1>Checkout</h1>
+
+<p>Cart Total: {{ order.cart.total }}</p>
+<p>Tuition Fund</p>
+
+{% endblock %}
