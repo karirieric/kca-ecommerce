@@ -41,10 +41,6 @@ Follow the prompts to enter a username, email, and password for the superuser ac
 4. Add and remove products from the shopping cart.
 5. Purchase products seamlessly.
 
-## Contributing
-
-If you'd like to contribute to this project, please follow the CONTRIBUTING.md guidelines.
-
 ## License
 
 This project is licensed under Creative Commons Zero v1.0 Universal.
@@ -52,7 +48,7 @@ This project is licensed under Creative Commons Zero v1.0 Universal.
 ## Contact
 
 [Eric Kariri] - [kaririformal@gmail.com]
-Project Link: [[https://github.com/karirieric/kca-ecommerce](url)
+Project Link: [[https://github.com/karirieric/kca-ecommerce](url)]
 
 ### Installation
 
