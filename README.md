@@ -38,7 +38,7 @@ Before you begin, ensure you have the following installed:
 2. Log in and explore the JamiiMarket features.
 3. Use the search engine to find products.
 4. Add and remove products from the shopping cart.
-5. Purchase products seamlessly.
+5. Purchase products.
 
 ## License
 
@@ -46,8 +46,8 @@ This project is licensed under Creative Commons Zero v1.0 Universal license.
 
 ## Contact
 
-*[Eric Kariri] - [kaririformal@gmail.com]
-*Project Link: [[https://github.com/karirieric/kca-ecommerce](url)]
+[Eric Kariri] - [kaririformal@gmail.com]
+Project Link: [[https://github.com/karirieric/kca-ecommerce](url)]
 
 ### Installation
 
