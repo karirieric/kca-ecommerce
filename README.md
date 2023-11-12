@@ -40,7 +40,7 @@ Before you begin, ensure you have the following installed:
 git clone https://github.com/your-username/jamii-market.git
 
 ```console
-2. Install dependencies:
+$ 2. Install dependencies:
 
 
 ```bash
