@@ -42,25 +42,25 @@ git clone https://github.com/your-username/jamii-market.git
 
 2. Install dependencies:
 
-"
-bash
+
+```bash
 pip install -r requirements.txt
-"
 
-3. Apply migrations:
 
-"
-bash
+# Apply migrations:
+
+
+```bash
 python manage.py makemigrations
 python manage.py migrate
-"
 
-4. Create a superuser account:
 
-"
-bash
+# Create a superuser account:
+
+
+```bash
 python manage.py createsuperuser
-"
+
 
 Follow the prompts to enter a username, email, and password for the superuser account.
 
@@ -78,13 +78,9 @@ If you'd like to contribute to this project, please follow the CONTRIBUTING.md g
 
 ## License
 
-This project is licensed under the MIT License.
-
-## Acknowledgments
-
-Mention any contributors or external libraries used.
+This project is licensed under Creative Commons Zero v1.0 Universal.
 
 ## Contact
 
-[Your Name] - [Your Email]
-Project Link: https://github.com/your-username/jamii-market
+[Eric Kariri] - [kaririformal@gmail.com]
+Project Link: [[https://github.com/karirieric/kca-ecommerce](url)
