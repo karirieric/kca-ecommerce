@@ -31,37 +31,6 @@ Before you begin, ensure you have the following installed:
 * [Python](https://www.python.org/downloads/) (version 3.7 or higher)
 * [Django](https://www.djangoproject.com/download/) (version 3.2 or higher)
 
-### Installation
-
-1. Clone the repository:
-
-
-```bash
-git clone https://github.com/your-username/jamii-market.git
-
-```console
-$ 2. Install dependencies:
-
-
-```bash
-pip install -r requirements.txt
-
-
-# Apply migrations:
-
-
-```bash
-python manage.py makemigrations
-python manage.py migrate
-
-
-# Create a superuser account:
-
-
-```bash
-python manage.py createsuperuser
-
-
 Follow the prompts to enter a username, email, and password for the superuser account.
 
 ### Usage
@@ -84,3 +53,11 @@ This project is licensed under Creative Commons Zero v1.0 Universal.
 
 [Eric Kariri] - [kaririformal@gmail.com]
 Project Link: [[https://github.com/karirieric/kca-ecommerce](url)
+
+### Installation
+
+1. Clone the repository:
+
+
+```bash
+git clone https://github.com/karirieric/kca-ecommerce.git
