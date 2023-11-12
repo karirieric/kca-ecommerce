@@ -31,7 +31,6 @@ Before you begin, ensure you have the following installed:
 * [Python](https://www.python.org/downloads/) (version 3.7 or higher)
 * [Django](https://www.djangoproject.com/download/) (version 3.2 or higher)
 
-Follow the prompts to enter a username, email, and password for the superuser account.
 
 ### Usage
 
@@ -43,12 +42,12 @@ Follow the prompts to enter a username, email, and password for the superuser ac
 
 ## License
 
-This project is licensed under Creative Commons Zero v1.0 Universal.
+This project is licensed under Creative Commons Zero v1.0 Universal license.
 
 ## Contact
 
-[Eric Kariri] - [kaririformal@gmail.com]
-Project Link: [[https://github.com/karirieric/kca-ecommerce](url)]
+*[Eric Kariri] - [kaririformal@gmail.com]
+*Project Link: [[https://github.com/karirieric/kca-ecommerce](url)]
 
 ### Installation
 
