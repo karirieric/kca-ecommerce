@@ -1,0 +1,21 @@
+{% load custom_filters %}
+
+<div class="card" style="width: 18rem;">
+  {% if instance.image %}
+  <a href="{{ instance.get_absolute_url }}" class="">
+      <img src="{{ instance.image.url }}" class="card-img-top" alt="{{ instance.title }} logo">
+  </a>
+      {% endif %}
+    <div class="card-body">
+      <h4 class="card-title">{{ instance.title }}</h4>
+     <h6 class="card-title">Ksh {{ instance.price|format_price }}</h6>
+      
+
+      <p class="card-text">{{ instance.description|truncatewords:21 }}</p>
+      <a href="{{ instance.get_absolute_url }}" class="btn btn-primary">View</a>
+      <!-- <a href="{% url 'products:detail' slug=instance.slug %}" class="btn btn-warning">URL Shortcut</a> -->
+
+    </div>
+  </div>
+  <br> 
+
