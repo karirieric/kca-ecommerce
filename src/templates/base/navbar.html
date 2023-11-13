@@ -1,0 +1,47 @@
+{% url 'home' as home_url %}
+{% url 'contact' as contact_url %}
+{% url 'products:list' as product_list_url %}
+{% url 'login' as login_url %}
+{% url 'register' as register_url %}
+{% url 'cart:home' as cart_url %}
+
+<nav id="navigation" class="navbar navbar-expand-lg bg-body-tertiary">
+    <a class="navbar-brand" href="{{ home_url }}"></a>
+    <img class="menubaricon" width="115px" height="100px" src="https://res.cloudinary.com/dpoqx18xw/image/upload/v1683304974/JamiiMarketLogo_czqemr.png" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon" style="background: url(https://res.cloudinary.com/dpoqx18xw/image/upload/v1683465534/icons8-menu-48_epensl.png); background-size: 100%;"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" style="color: black;">
+            <li class="nav-item active">
+                <a class="nav-link" style="color: black;" href="{{ home_url }}"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: black;"  href="{{ contact_url }}"><b>Contact</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="{{ product_list_url }}"><b>Products</b></a>
+            </li>
+
+            {% if request.user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" style="color: black;"  href="{{ login_url }}"><b>Logout</b></a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" style="color: black;"  href="{{ register_url }}"><b>Register</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="{{ login_url }}"><b>Login</b></a>
+            </li>
+            {% endif %}
+            <li class="nav-item {% if request.path == cart_url %}active{% endif %}">
+                <a class="nav-link" style="color: black;" href="{{ cart_url }}"><b>{{ request.session.cart_items }} <i class="fas fa-shopping-cart"></i>
+                </b></a>
+            </li>
+        </ul>
+        {% include 'search/snippets/search-form.html' %}
+    </div>
+</nav>
+

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+        <link rel="icon" href="https://res.cloudinary.com/dpoqx18xw/image/upload/v1683304974/JamiiMarketLogo_czqemr.png" type="image/x-icon">
+
+
+
+        <title>KCA Ecommerce</title>
+            {% include 'base/css.html' %}
+            {% block base_head %}{% endblock %}
+    </head>
+    <body>
+        {% include 'base/navbar.html' with brand_name='KCAU E-Commerce' %}
+        
+        {% block content %}{% endblock %}
+
+
+        {% include 'base/js.html' %}
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </body>
+</html>
