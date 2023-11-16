@@ -23,7 +23,7 @@ JamiiMarket is a web-based e-commerce application developed for KCA University. 
 
 Before you begin, ensure you have the following installed:
 
-* [Python](https://www.python.org/downloads/) (version 3.7 or higher)
+* [Python](https://www.python.org/downloads/) (version 3.10 or higher)
 * [Django](https://www.djangoproject.com/download/) (version 3.2 or higher)
 
 
